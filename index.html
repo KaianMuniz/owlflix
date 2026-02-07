@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OwlFlix - Seu assistente inteligente para encontrar o filme ideal</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/animations.css">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg"></div>
+    <main class="container">
+        <div class="main-content">
+            <header class="brand-header">
+                <div class="container-logo">
+                    <img src="src/images/coruja_logo.png" alt="Mascote Coruja OwlFlix" class="owl-image">
+                    <h1 class="brand-title">OwlFlix</h1>
+
+                </div>
+                <p class="brand-subtitle">Seu assistente inteligente para encontrar o filme ideal</p>
+            </header>
+
+            <section class="search-card">
+                <div class="search-content">
+                    <div class="input-container">
+                        <textarea rows="3" id="mood-input"
+                            placeholder="Digite como está se sentindo ou que tipo de filme você prefere..."
+                            class="mood-input"></textarea>
+                        <div class="examples">
+                            <h3 class="examples-title">Exemplos:</h3>
+                            <ul class="examples-list">
+                                <li>Quero algo engraçado para relaxar após um dia difícil</li>
+                                <li>Estou me sentindo curioso e quero algo que me surpreenda</li>
+                                <li>Estou me sentindo triste e quero algo que me aqueça o coração</li>
+                            </ul>
+                        </div>
+                        <button id="search-button" class="search-button">
+                            <span class="play-icon">&#9654;</span>
+                            Encontrar os Melhores Filmes
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <div id="results">
+                <h2>Filmes Perfeitos para Você</h2>
+                <div id="movies-grid" class="movies-grid">
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
